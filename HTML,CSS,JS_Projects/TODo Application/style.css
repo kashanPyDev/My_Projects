@@ -1,0 +1,230 @@
+* {
+    background-color: #e4ddf1;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    /* text-transform: capitalize; */
+}
+
+.container {
+    height: auto;
+    width: 600px;
+    background-color: #e4e0eb;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 5px black;
+    text-align: center;
+}
+
+/* header{
+    background-color: #fff;
+} */
+h1 {
+    font-size: 36px;
+    color: #0b57d0;
+}
+
+#add-todo-btn {
+    padding: 12px 30px;
+    background-color: #0b57d0;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: background 0.3s;
+    box-shadow: 0px 0px 5px black;
+}
+
+#add-todo-btn:hover {
+    background-color: #360a8c;
+    /* color: white; */
+}
+
+main {
+    margin-top: 20px;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#todo-list li {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0d2f2727;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    transition: transform 0.3s;
+    color: black;
+}
+
+#todo-list li:hover {
+    /* background-color: #f0f0f0; */
+    transition: translateY(-5px);
+}
+
+.todo-text {
+    font-size: 18px;
+    color: #333;
+    flex: 1;
+}
+
+#todo-list li button {
+    display: flex;
+    justify-content: space-evenly;
+    /* position: absolute; */
+    /* right: 5px; */
+    margin-left: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    background-color:#0508ad;
+    transform: background 0.3s;
+    margin-left: 10px;
+    color: rgba(255, 255, 255, 0.788);
+}
+#todo-list li button:hover{
+    background-color: #ffffff;
+    color: rgb(12, 10, 10);
+}
+.edit-btn {
+    background-color: #f1c40f;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+
+/* .edit-btn:hover {
+    
+} */
+
+.delete-btn:hover {
+    background-color: #c0392b;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 400px;
+    position: inherit;
+    animation: fadeIn 1s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.4;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+.popup-title {
+    font-size: 24px;
+    color: #084298;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+#todo-input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #084298;
+    border-radius: 22px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #084298;
+    background-color: transparent;
+    box-shadow: 0px 0px 3px;
+}
+ todo-input:invalid{
+    animation: shake 300ms;
+}
+@keyframes shake {
+    25% {transform: translateX(4px);}
+    50% {transform: translateX(-4px);}
+    75% {transform: translateX(4px);}
+} 
+#todo-input::placeholder {
+    color: #084298;
+}
+
+#todo-input:focus {
+    outline: 1px solid #084298;
+    border: 1px solid #084298;
+}
+
+button {
+    cursor: pointer;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 22px;
+    font-size: 14px;
+    transition: background 0.3s;
+
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+#save-todo-button {
+    background-color: #084298;
+    color: #fff;
+    margin-right: 10px;
+}
+
+#close-popup-btn {
+    background-color: #f83434;
+    color: white;
+
+}
+
+.popup-content button {
+    width: 25%;
+}
+
+

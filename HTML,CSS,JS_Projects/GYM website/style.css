@@ -1,0 +1,121 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background-image: url(./images/pexels-scottwebb-136409.jpg);
+    color: white;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+body img {
+    height: auto;
+    width: 100%;
+    max-width: 700px;
+}
+
+.left {
+    display: inline-block;
+    position: absolute;
+    left: 50px;
+    top: 20px;
+}
+
+.left div {
+    text-align: center;
+    line-height: 15px;
+    font-size: 18px;
+}
+
+.left img {
+    width: 90px;
+    filter: invert(100%);
+}
+
+.mid {
+
+    display: block;
+    width: 40%;
+    margin: 20px auto;
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    display: inline-block;
+    position: absolute;
+    right: 34px;
+    top: 30px;
+}
+.navbar {
+    display: inline-block;
+}
+
+.navbar li {
+    display: inline-block;
+    font-size: 17px;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+}
+
+.navbar li a:hover {
+    text-decoration: underline;
+    color: rgb(151, 160, 20);
+}
+
+.btn {
+    margin: 0px 6px;
+    background-color: black;
+    color: white;
+    padding: 4px 14px;
+    border: 2px solid green;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.h{
+    margin-left: -100px;
+}
+.btn:hover {
+    background-color: rgb(53, 46, 46);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: 2px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    margin: 100px 75px;
+    padding: 75px;
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.form-group input {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    display: block;
+    /* width: 500px; */
+    padding: 1px;
+    border: 2px solid black;
+    font-size: 23px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+.container .kk {
+    display: block;
+    margin-left: 200px;
+}
